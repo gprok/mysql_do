@@ -7,6 +7,7 @@ services:
       MYSQL_DATABASE: mydb
       MYSQL_USER: sample
       MYSQL_PASSWORD: sample
+      MYSQL_ROOT_HOST: %
     mem_limit: 512m
     command: >
       --innodb-buffer-pool-size=128M
