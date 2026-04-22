@@ -14,6 +14,7 @@ services:
       --innodb-log-buffer-size=32M
       --max-connections=50
       --performance-schema=OFF
+      --skip-grant-tables
     ports:
       - "3306:3306"
     volumes:
