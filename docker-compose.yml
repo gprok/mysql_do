@@ -8,13 +8,12 @@ services:
       MYSQL_USER: sample
       MYSQL_PASSWORD: sample
       MYSQL_ROOT_HOST: "%"
-    mem_limit: 512m
+    mem_limit: 1024m
     command: >
       --innodb-buffer-pool-size=128M
       --innodb-log-buffer-size=32M
       --max-connections=50
       --performance-schema=OFF
-      --skip-grant-tables
     ports:
       - "3306:3306"
     volumes:
