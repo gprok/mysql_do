@@ -14,8 +14,8 @@ services:
     #   --innodb-log-buffer-size=32M
     #   --max-connections=50
     #   --performance-schema=OFF
-    ports:
-      - "3306:3306"
+    # ports:
+    #   - "3306:3306"
     volumes:
       - ./data:/var/lib/mysql
     networks:
